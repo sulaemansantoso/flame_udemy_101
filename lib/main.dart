@@ -24,6 +24,7 @@ class MyGameWidget extends StatelessWidget {
             return StartMenuOverlay(game);
           },
         },
+        //adding initial overlays
         initialActiveOverlays: const ["startmenu"],
       ),
     );
