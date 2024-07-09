@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'dart:math' as math;
+import 'dart:math';
 
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
@@ -75,8 +76,7 @@ class Ship extends SpriteComponent
 
   void setTarget(Vector2 Target) {
     lookAt(Target);
-    angle += math.pi;
-
+    angle += pi;
     direction = target - position;
     direction.normalize();
   }

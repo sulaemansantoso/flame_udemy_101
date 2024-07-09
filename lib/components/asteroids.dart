@@ -27,7 +27,7 @@ class Asteroids extends SpriteComponent
 
   @override
   FutureOr<void> onLoad() async {
-    sprite = await game.loadSprite('/meteor/spaceMeteors_001.png');
+    sprite = await game.loadSprite('meteor/spaceMeteors_001.png');
 
     math.Random r = math.Random();
     double x = r.nextDouble() * 2 - 1;
